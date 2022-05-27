@@ -17,6 +17,7 @@ price background-color: #40005d
   flex-direction: column;
   flex-flow: column-reverse;
   align-items: flex-end;
+  flex: 1;
 }
 
 .expense-item h2 {
