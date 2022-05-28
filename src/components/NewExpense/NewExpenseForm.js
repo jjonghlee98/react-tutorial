@@ -7,7 +7,6 @@ const NewExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
-
   // 두 번째 방법: 하나의 state로 다수를 관리하는 방법
   // const [userInput, setUserInput] = useState({
   //   enteredTitle: "",
@@ -89,6 +88,7 @@ const NewExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__action">
+        <button type="submit" onClick={props.onCancle}>Cancle</button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
